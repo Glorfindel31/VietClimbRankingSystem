@@ -95,6 +95,10 @@ nav input:focus {
   margin: 0.5rem;
   font-size: 1em;
 }
+.btn:hover {
+  outline: solid 0.2rem white;
+  color: var(--Black) !important;
+}
 .main__container {
   margin: auto;
   margin-top: 2rem;
@@ -268,6 +272,15 @@ tr:last-of-type td:last-of-type {
   color: white;
   font-size: 3.5em;
   padding: 0.2em;
+}
+
+/*--- Scoring Table --*/
+.score-table__container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.table-container {
+  width: 100%;
 }
 /*--- hidden ---*/
 .hidden {
