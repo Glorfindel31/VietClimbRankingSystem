@@ -28,7 +28,7 @@
 
     <!-- Main Content -->
     <main class="main__container">
-      <div class="welcome_message">
+      <div class="welcome_message hidden">
         <div class="logo-img">
           <img src="./img/VietClimb - Logo 2022_full - yellow bg.png" />
         </div>
@@ -157,36 +157,52 @@
           </tr>
         </tbody>
       </table>
+      <!---Judges Interface--->
+      <div class="judge-interface">
+        <h1>Judge Cedric</h1>
+
+        <label for="participant-number">Competitors:</label>
+        <select id="participant-number" name="participant-number" autocomplete="off">
+          <option value="" selected disabled>Select Competitors Number</option>
+          <option value="0001">0001</option>
+          <option value="0002">0002</option>
+          <option value="0003">0003</option>
+          <option value="0004">0004</option>
+        </select>
+
+        <label for="participant-problems">Problems:</label>
+        <select id="participant-problems" name="participant-problems" autocomplete="off">
+          <option value="" selected disabled>Select a Problem</option>
+          <option value="01">Problem 01</option>
+          <option value="02">Problem 02</option>
+          <option value="03">Problem 03</option>
+          <option value="04">Problem 04</option>
+          <option value="05">Problem 05</option>
+          <option value="06">Problem 06</option>
+          <option value="07">Problem 07</option>
+          <option value="08">Problem 08</option>
+          <option value="09">Problem 09</option>
+          <option value="10">Problem 10</option>
+        </select>
+        <div class="judge-counter">
+          <h2>Top</h2>
+          <button class="btn operator-btn">+</button>
+          <input type="text" class="top-number" value="0" />
+          <button class="btn operator-btn">-</button>
+          <h2>Attempts</h2>
+          <button class="btn operator-btn">+</button>
+          <input type="text" class="top-number" value="0" />
+          <button class="btn operator-btn">-</button>
+        </div>
+        <div class="judge-timer">
+          <h1>Timer</h1>
+          <p class="timer-digits">04:00:00</p>
+          <button class="btn timer-btn">▶</button>
+          <button class="btn timer-btn">⏸</button>
+          <button class="btn timer-btn">⏹</button>
+        </div>
+      </div>
     </main>
-
-    <!---Judges Interface--->
-    <div class="judge-interface">
-      <h1>Judge Cedric</h1>
-
-      <label for="participant-number">Competitors:</label>
-      <select id="participant-number" name="participant-number" autocomplete="off">
-        <option value="" selected disabled>Select Competitors Number</option>
-        <option value="0001">0001</option>
-        <option value="0002">0002</option>
-        <option value="0003">0003</option>
-        <option value="0004">0004</option>
-      </select>
-
-      <label for="participant-problems">Problems:</label>
-      <select id="participant-problems" name="participant-problems" autocomplete="off">
-        <option value="" selected disabled>Select a Problem</option>
-        <option value="01">Problem 01</option>
-        <option value="02">Problem 02</option>
-        <option value="03">Problem 03</option>
-        <option value="04">Problem 04</option>
-        <option value="05">Problem 05</option>
-        <option value="06">Problem 06</option>
-        <option value="07">Problem 07</option>
-        <option value="08">Problem 08</option>
-        <option value="09">Problem 09</option>
-        <option value="10">Problem 10</option>
-      </select>
-    </div>
 
     <!-- Footer -->
     <footer>

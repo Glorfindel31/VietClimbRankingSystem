@@ -226,6 +226,49 @@ tr:last-of-type td:last-of-type {
   border-bottom-right-radius: calc(var(--border-radius) - var(--padding));
 }
 
+/*--- Judge interface ---*/
+.judge-interface {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: var(--padding);
+}
+
+.judge-interface h1 {
+  margin-bottom: 1rem;
+}
+.judge-interface button {
+  width: 3rem;
+  text-align: center;
+}
+.judge-interface input {
+  width: 5%;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: var(--Black);
+  font-weight: 700;
+  color: white;
+  border: solid 0.1rem var(--orange);
+}
+.judge-counter {
+  display: flex;
+  flex-direction: row;
+}
+.judge-timer {
+  padding: 1rem;
+  margin: 1rem;
+  align-self: center;
+  text-align: center;
+  border: solid 0.2rem black;
+}
+.timer-digits {
+  background-color: var(--Black);
+  border-radius: var(--padding);
+  text-align: center;
+  color: white;
+  font-size: 3.5em;
+  padding: 0.2em;
+}
 /*--- hidden ---*/
 .hidden {
   display: none;
