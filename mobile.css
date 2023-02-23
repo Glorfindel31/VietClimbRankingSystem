@@ -1,0 +1,41 @@
+nav {
+  display: flex;
+  padding: 2rem;
+  font-size: 1em;
+}
+nav input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-block: 0.5rem;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.btn__scoring,
+.home_btn,
+.btn,
+nav button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 1.5em;
+  margin: 0;
+  margin-block: 0.5rem;
+  padding: 0;
+}
+
+.counter-top input,
+.counter-top button {
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 3rem;
+}
+
+/*--- scoring table ---*/
+.score-table__container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+}

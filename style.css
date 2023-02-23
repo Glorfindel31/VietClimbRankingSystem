@@ -4,7 +4,6 @@
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
   font-family: "SVN-Gilroy-Bold";
   src: url("font/SVN-Gilroy-Bold.otf") format("opentype");
@@ -20,23 +19,19 @@
   --padding: 1rem;
   --border-radius: 2rem;
 }
-
 * {
   margin: 0;
 }
-
 li {
   list-style: none;
   display: inline-flex;
 }
-
 a,
 a:link,
 a:visited {
   color: var(--Black);
   text-decoration: none;
 }
-
 body {
   font-family: "SVN-Gilroy", sans-serif;
   font-weight: 300;
@@ -56,7 +51,9 @@ footer {
   padding: 2rem;
   text-align: center;
 }
-/*-------------------------------------------*/
+
+/*---Nav bar---*/
+/*-------------*/
 
 nav {
   background-color: var(--Black);
@@ -73,7 +70,6 @@ nav input {
   border-radius: 1rem;
   transition: border-radius 1s;
 }
-
 nav input:active,
 nav input:focus {
   border: solid 1px var(--orange);
@@ -82,7 +78,6 @@ nav input:focus {
   outline: none;
   border-radius: 0rem;
 }
-
 .btn {
   background-color: var(--orange);
   color: white !important;
@@ -99,6 +94,10 @@ nav input:focus {
   outline: solid 0.2rem white;
   color: var(--Black) !important;
 }
+.btn:active {
+  background-color: var(--Black);
+  color: white !important;
+}
 .main__container {
   margin: auto;
   margin-top: 2rem;
@@ -107,7 +106,10 @@ nav input:focus {
   box-shadow: 0px 0px 5px var(--Black-50opacity);
   border-radius: var(--border-radius);
 }
+
 /*--- Welcome ---*/
+/*---------------*/
+
 .welcome_message {
   max-height: 50rem;
   background-color: var(--Black-50opacity);
@@ -148,6 +150,7 @@ nav input:focus {
 }
 
 /*--- Registration Management ---*/
+/*-------------------------------*/
 
 .container-registration {
   border: solid 1px var(--orange);
@@ -192,6 +195,7 @@ nav input:focus {
 }
 
 /*--- Participants table ---*/
+/*--------------------------*/
 
 .table__participants {
   width: 100%;
@@ -231,6 +235,8 @@ tr:last-of-type td:last-of-type {
 }
 
 /*--- Judge interface ---*/
+/*-----------------------*/
+
 .judge-interface {
   display: flex;
   flex-direction: column;
@@ -245,7 +251,7 @@ tr:last-of-type td:last-of-type {
   width: 3rem;
   text-align: center;
 }
-.judge-interface input {
+.counter-top input {
   width: 5%;
   border-radius: 2rem;
   text-align: center;
@@ -253,17 +259,21 @@ tr:last-of-type td:last-of-type {
   font-weight: 700;
   color: white;
   border: solid 0.1rem var(--orange);
+  padding: 0.5rem;
+}
+.counter-top {
+  text-align: center;
 }
 .judge-counter {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 .judge-timer {
   padding: 1rem;
   margin: 1rem;
   align-self: center;
   text-align: center;
-  border: solid 0.2rem black;
 }
 .timer-digits {
   background-color: var(--Black);
@@ -275,14 +285,25 @@ tr:last-of-type td:last-of-type {
 }
 
 /*--- Scoring Table --*/
+/*--------------------*/
+
 .score-table__container {
   display: grid;
   grid-template-columns: auto auto;
+  gap: 1rem;
 }
-.table-container {
+.table-container table {
   width: 100%;
 }
+.table-container h2 {
+  margin-block: 0.5rem;
+  color: var(--orange);
+  text-shadow: 2px 2px var(--Black);
+}
+
 /*--- hidden ---*/
+/*--------------*/
+
 .hidden {
   display: none;
 }

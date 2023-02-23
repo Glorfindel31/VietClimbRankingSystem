@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="mobile.css" />
     <title>Vietclimb Ranking System | Cedric Florentin</title>
   </head>
   <body>
@@ -184,16 +185,22 @@
           <option value="09">Problem 09</option>
           <option value="10">Problem 10</option>
         </select>
+
         <div class="judge-counter">
-          <h2>Top</h2>
-          <button class="btn operator-btn">+</button>
-          <input type="text" class="top-number" value="0" />
-          <button class="btn operator-btn">-</button>
-          <h2>Attempts</h2>
-          <button class="btn operator-btn">+</button>
-          <input type="text" class="top-number" value="0" />
-          <button class="btn operator-btn">-</button>
+          <div class="counter-top">
+            <h2>Top</h2>
+            <button class="btn operator-btn">+</button>
+            <input type="text" class="top-number" value="0" />
+            <button class="btn operator-btn">-</button>
+          </div>
+          <div class="counter-top">
+            <h2>Attempts</h2>
+            <button class="btn operator-btn">+</button>
+            <input type="text" class="top-number" value="0" />
+            <button class="btn operator-btn">-</button>
+          </div>
         </div>
+
         <div class="judge-timer">
           <h1>Timer</h1>
           <p class="timer-digits">04:00:00</p>
