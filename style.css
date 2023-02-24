@@ -267,7 +267,7 @@ tr:last-of-type td:last-of-type {
 .judge-counter {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 .judge-timer {
   padding: 1rem;
@@ -280,8 +280,11 @@ tr:last-of-type td:last-of-type {
   border-radius: var(--padding);
   text-align: center;
   color: white;
-  font-size: 3.5em;
+  font-size: 2.8em;
   padding: 0.2em;
+}
+.btn-top {
+  align-self: center;
 }
 
 /*--- Scoring Table --*/

@@ -188,27 +188,23 @@
 
         <div class="judge-counter">
           <div class="counter-top">
-            <h2>Top</h2>
-            <button class="btn operator-btn">+</button>
-            <input type="text" class="top-number" value="0" />
-            <button class="btn operator-btn">-</button>
-          </div>
-          <div class="counter-top">
             <h2>Attempts</h2>
             <button class="btn operator-btn">+</button>
-            <input type="text" class="top-number" value="0" />
+            <input type="text" class="attempts-number" value="0" />
             <button class="btn operator-btn">-</button>
           </div>
         </div>
+        <button class="btn btn-top">TOP</button>
 
         <div class="judge-timer">
           <h1>Timer</h1>
-          <p class="timer-digits">04:00:00</p>
-          <button class="btn timer-btn">▶</button>
-          <button class="btn timer-btn">⏸</button>
-          <button class="btn timer-btn">⏹</button>
+          <p class="timer-digits">04:00</p>
+          <button id="start" class="btn timer-btn">▶</button>
+          <button id="pause" class="btn timer-btn">⏸</button>
+          <button id="stop" class="btn timer-btn">⏹</button>
         </div>
       </div>
+      <button class="btn btn-submit-result">Submit</button>
     </main>
 
     <!-- Footer -->
